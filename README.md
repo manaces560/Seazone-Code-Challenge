@@ -5,6 +5,9 @@
 <p align="center">Este projeto tem o objetivo de fazer uma breve analise de dados usando python</p>
 
 ## Requisitos para execução do projeto
+Python 3.9.5    
+Pandas 1.2.4    
+Matplotlib 3.4.2    
 <p align="center">🚀 Links para Download</p>
 <h1 align="center">
     <a href="https://www.python.org/">🔗 Python 3.9.5 </a>
@@ -16,7 +19,7 @@
     <a href="https://matplotlib.org/">🔗 Matplotlib 3.4.2 </a>
 </h1>
 ## Observações
-<p align="center">Para executar os codigos e necessário ter no mesmo diretório os arquivos de dados "desafio_details.csv" e "desafio_priceav.csv", ou entao editar colocando o endereço dos arquivos no codigo</p>
+<p align="center">Para executar os codigos e necessário ter no mesmo diretório os arquivos de dados "desafio_details.csv" e "desafio_priceav.csv", ou então editar colocando o endereço dos arquivos no codigo. Por motivos de segurança estes arquivos não estão neste diretório</p>
 
 
 
