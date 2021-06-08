@@ -61,4 +61,4 @@ plt.title("Antecedência media ("+str(int(antecedencia_media))+")  X  Antecedên
 # exibir grafico e salvar como imagem .png
 fig = plt.gcf()
 plt.show()
-fig.savefig('bairros_em_ordem_crescente_de_faturamento_medio.png', format='png')
+fig.savefig('antecedencia_das_reservas.png', format='png')
