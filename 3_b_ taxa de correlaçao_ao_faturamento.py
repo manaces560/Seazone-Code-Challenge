@@ -37,9 +37,9 @@ plt.barh(correlacao.index.to_list(),correlacao.to_list(),color="green")
 # legendas eixo X
 #plt.xticks(correlacao.index.to_list(),fontsize=7)
 # legendas eixo Y
-plt.ylabel("Indice de correlação")
+plt.ylabel("Indice de correlaçãoElementos do banco de dados")
 # legendas eixo x
-plt.xlabel("Elementos do banco de dados")
+plt.xlabel("Indice de correlação")
 # titulo do grafico
 plt.title("Correlaçao dos elementos do banco de dados ao faturamento")
 # exibir grafico e salvar como imagem .png
