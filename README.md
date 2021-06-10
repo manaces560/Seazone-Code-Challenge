@@ -23,7 +23,7 @@ Matplotlib 3.4.2
 $ git clone https://github.com/manaces560/Seazone-Code-Challenge
 
 ## Observações
-<p align="center">Para executar os codigos e necessário ter no mesmo diretório os arquivos de dados "desafio_details.csv" e "desafio_priceav.csv", ou então editar colocando o endereço dos arquivos no codigo. Por motivos de segurança estes arquivos não estão neste diretório</p>
+<p align="center">Para executar os codigos e necessário ter no mesmo diretório os arquivos de dados "desafio_details.csv" e "desafio_priceav.csv", ou então editar colocando o endereço dos arquivos no codigo.</p>
 
 
 
