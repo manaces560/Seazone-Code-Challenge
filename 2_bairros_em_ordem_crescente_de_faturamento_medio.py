@@ -8,6 +8,9 @@ priceav = pd.read_csv("desafio_priceav.csv")
 
 # unindo os 2 arquivos .csv pela chave estrangeira 'airbnb_listing_id'
 data_base = pd.merge(priceav, details, how = 'left', on = 'airbnb_listing_id')
+# deletando os dias em que nao estava ocupado
+data_base = data_base.drop(data_base[data_base.occupied == 0].index)
+
 
 # ordenando os bairros em ordem crescente de faturamneto medio
 bairros_em_ordem_crescente_de_faturamento_medio=data_base.groupby(['suburb'], as_index=False).mean().groupby('suburb')['price_string'].mean().sort_values()

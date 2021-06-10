@@ -8,6 +8,8 @@ priceav = pd.read_csv("desafio_priceav.csv")
 
 # unindo os 2 arquivos .csv pela chave estrangeira 'airbnb_listing_id'
 data_base = pd.merge(priceav, details, how = 'left', on = 'airbnb_listing_id')
+# deletando os dias em que nao estava ocupado
+data_base = data_base.drop(data_base[data_base.occupied == 0].index)
 
 
 # analise simples da relaçao dos detalhes dos listings com o faturamento
@@ -41,11 +43,11 @@ plt.ylabel("Faturamento")
 # legendas eixo x
 plt.xlabel("Quartos")
 # titulo do grafico
-plt.title("Ordem crescente de faturamento por quantidade de quartos")
+plt.title("Faturamento por quantidade de quartos")
 # exibir grafico e salvar como imagem .png
 fig = plt.gcf()
 plt.show()
-fig.savefig('ordem_crescente_de_faturamento_por_number_of_bedrooms.png', format='png')
+fig.savefig('Faturamento_por_number_of_bedrooms.png', format='png')
 
 
 # passando os dados para gerar o grafico
@@ -57,11 +59,11 @@ plt.ylabel("Faturamento")
 # legendas eixo x
 plt.xlabel("Nota do anuncio")
 # titulo do grafico
-plt.title("Ordem crescente de faturamento por Nota do anuncio")
+plt.title("Faturamento por Nota do anuncio")
 # exibir grafico e salvar como imagem .png
 fig = plt.gcf()
 plt.show()
-fig.savefig('ordem_crescente_de_faturamento_por_star_rating.png', format='png')
+fig.savefig('Faturamento_por_star_rating.png', format='png')
 
 
 # passando os dados para gerar o grafico
@@ -73,11 +75,11 @@ plt.ylabel("Faturamento")
 # legendas eixo x
 plt.xlabel("0=normal 1=superhost")
 # titulo do grafico
-plt.title("Ordem crescente de faturamento por superhost")
+plt.title("Faturamento por superhost")
 # exibir grafico e salvar como imagem .png
 fig = plt.gcf()
 plt.show()
-fig.savefig('ordem_crescente_de_faturamento_por_is_superhost.png', format='png')
+fig.savefig('Faturamento_por_is_superhost.png', format='png')
 
 
 # passando os dados para gerar o grafico
@@ -89,11 +91,11 @@ plt.ylabel("Faturamento")
 # legendas eixo x
 plt.xlabel("Reviews")
 # titulo do grafico
-plt.title("Ordem crescente de faturamento por numero de reviews")
+plt.title("Faturamento por numero de reviews")
 # exibir grafico e salvar como imagem .png
 fig = plt.gcf()
 plt.show()
-fig.savefig('ordem_crescente_de_faturamento_por_number_of_reviews.png', format='png')
+fig.savefig('Faturamento_por_number_of_reviews.png', format='png')
 
 
 # passando os dados para gerar o grafico
@@ -105,8 +107,8 @@ plt.ylabel("Faturamento")
 # legendas eixo x
 plt.xlabel("Banheiros")
 # titulo do grafico
-plt.title("Ordem crescente de faturamento por numero de banheiros")
+plt.title("Faturamento por numero de banheiros")
 # exibir grafico e salvar como imagem .png
 fig = plt.gcf()
 plt.show()
-fig.savefig('ordem_crescente_de_faturamento_por_number_of_bathrooms.png', format='png')
+fig.savefig('Faturamento_por_number_of_bathrooms.png', format='png')
