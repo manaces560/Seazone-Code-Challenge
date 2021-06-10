@@ -22,7 +22,7 @@ for n in range (len(priceav["booked_on"])):
 
         soma_instervalo_dias = soma_instervalo_dias + abs((data_da_reserva - data_de_reserva).days)
 
-        if data_da_reserva.weekday()==1 or data_da_reserva.weekday()==7:
+        if data_da_reserva.weekday()==5 or data_da_reserva.weekday()==6:
             dados_validos_fim_semana=dados_validos_fim_semana+1 # contando as linhas validas para a media do fim de semana
             soma_intervalo_dias_fim_semana=soma_intervalo_dias_fim_semana +  abs((data_da_reserva - data_de_reserva).days)
 
